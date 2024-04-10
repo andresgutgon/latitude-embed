@@ -88,7 +88,7 @@ export default function Embedding() {
         {/* FIXME: Types are wrong in generated component */}
         {/* This needs more investigation */}
         <LatitudeEmbed
-          url='http://localhost:3000'
+          url={import.meta.env.VITE_LATITUDE_HOST}
           params={{ start_year: 2003, end_year: endYear }}
           onParamsChanged={(event: CustomEvent<EmbeddingEventData<EmbeddingEvent.ParamsChanged>>) => {
             const params = event.detail.params

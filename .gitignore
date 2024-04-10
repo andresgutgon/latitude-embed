@@ -26,4 +26,4 @@ dist-ssr
 # Do not commit lock files in the example
 package-lock.json
 yarn.lock
-pnpm-lock.yaml
+.env
