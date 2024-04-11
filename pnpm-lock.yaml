@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@latitude-data/react':
-    specifier: 0.4.0
-    version: 0.4.0(@types/react@18.2.74)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.3)
+    specifier: 0.5.0
+    version: 0.5.0(@types/react@18.2.74)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.3)
   '@radix-ui/react-dialog':
     specifier: ^1.0.5
     version: 1.0.5(@types/react-dom@18.2.24)(@types/react@18.2.74)(react-dom@18.2.0)(react@18.2.0)
@@ -811,8 +811,8 @@ packages:
       json-2-csv: 5.5.1
     dev: false
 
-  /@latitude-data/react@0.4.0(@types/react@18.2.74)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.3):
-    resolution: {integrity: sha512-6t+DH1wBMhAuL66/UNoGE8b3ujdtB7IWnlfnpMYS5fKy/DnMA/1Ql9+FdcZ2gkVOElRPmxK9mo6I7GYQJutdcg==}
+  /@latitude-data/react@0.5.0(@types/react@18.2.74)(react-dom@18.2.0)(react@18.2.0)(tailwindcss@3.4.3):
+    resolution: {integrity: sha512-zXeI0dTimQf2OyvXnAw+eGAcextuzPY/PjaUYN4oGmZZxfht3NuY6TYUYgmedT8Ruen5mMhiIbdLhEoli3VHiQ==}
     peerDependencies:
       react: ^17.0.0
       react-dom: ^17.0.0
@@ -820,7 +820,7 @@ packages:
       '@latitude-data/client': 0.9.0(@types/react@18.2.74)(react@18.2.0)(tailwindcss@3.4.3)
       '@latitude-data/embedding': 0.1.0
       '@latitude-data/query_result': 0.2.0
-      '@latitude-data/webcomponents': 0.2.0
+      '@latitude-data/webcomponents': 0.3.0
       '@tanstack/react-query': 5.28.14(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -830,8 +830,8 @@ packages:
       - tailwindcss
     dev: false
 
-  /@latitude-data/webcomponents@0.2.0:
-    resolution: {integrity: sha512-+Ma5/Oef8KUrhowC6XvWhztfTHSLV69wkwW7giSKZAF1LztO3686A+Fhhs+LmOAdWKO3P/FVMDPFNnx/BGPlNg==}
+  /@latitude-data/webcomponents@0.3.0:
+    resolution: {integrity: sha512-/CgL/JfJXbmbc6GqQcZwMHa8ASAtHQYXzzgZhMV4S6ZF9M8GYye8i8qksXkf9ZzQWX4JZJUWeIfT7t01cO6uwQ==}
     dependencies:
       '@latitude-data/embedding': 0.1.0
     dev: false
