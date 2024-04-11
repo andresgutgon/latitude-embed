@@ -24,7 +24,7 @@ export default function Embedding() {
   const { headerHeight } = useExample()
   const [ref, { height }] = useMeasure<HTMLDivElement>()
   const topHeight = height + headerHeight
-  const [endYear, setEndYear] = useState(2006)
+  const [endYear, setEndYear] = useState('2006')
 
   const runQuery = useCallback(() => {
     runEmbedViewQuery({ queryPaths: [], force: true })
@@ -64,7 +64,7 @@ export default function Embedding() {
             name='name'
             value={endYear}
             onChange={(e) => {
-              const value = Number(e.target.value)
+              const value = e.target.value
               changeEmbedParams({ end_year: value })
               setEndYear(value)
             }}
@@ -89,10 +89,10 @@ export default function Embedding() {
         {/* This needs more investigation */}
         <LatitudeEmbed
           url={import.meta.env.VITE_LATITUDE_HOST}
-          params={{ start_year: 2003, end_year: endYear }}
+          params={{ start_year: '2003', end_year: endYear }}
           onParamsChanged={(event: CustomEvent<EmbeddingEventData<EmbeddingEvent.ParamsChanged>>) => {
             const params = event.detail.params
-            const newEndYear = params.end_year as number
+            const newEndYear = params.end_year as string
             if (endYear === newEndYear) return
 
             setEndYear(newEndYear)
