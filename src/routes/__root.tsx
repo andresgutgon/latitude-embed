@@ -1,5 +1,4 @@
 import { createRootRoute, Link, Outlet } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import useMeasure from '@/lib/useMeasure'
 import { ExampleProvider } from '@/components/ExampleProvider'
 
@@ -29,7 +28,6 @@ function RootComponent() {
       <ExampleProvider headerHeight={height}>
         <Outlet />
       </ExampleProvider>
-      <TanStackRouterDevtools />
     </div>
   )
 }
